@@ -1,0 +1,11 @@
+auxiliary.org-netbeans-modules-javascript-nodejs.run_2e_enabled=false
+browser.autorefresh.Chrome=true
+browser.highlightselection.Chrome=true
+browser.run=true
+file.reference.krosswall-trunk=.
+file.reference.NetBeansProjects-trunk=.
+files.encoding=UTF-8
+site.root.folder=${file.reference.krosswall-trunk}
+source.folder=${file.reference.krosswall-trunk}
+start.file=index.html
+web.context.root=/

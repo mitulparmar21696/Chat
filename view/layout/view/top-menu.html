@@ -1,0 +1,109 @@
+﻿
+<div ng-init="init()" class="topmenu" bn-document-click>
+<!--    <form id="feedback-form" name="feedbackform" novalidate="novalidate" valid-submit="SendFeedbackClick()">
+        <div id="feedbackModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                 Modal content
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div>
+                            <button type="button" class="close" data-ng-click="cancelFeedback()">&times;</button>
+                            <h3 class="control-label">Feedback</h3>
+                        </div>
+                    </div>
+                    <div class="modal-body " id="modal1">
+                        <div class="row">
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-xs hidden-sm" data-ng-class="{'has-error': feedbackform.$submitted && feedbackform.issueStatus.$invalid,'has-feedback': feedbackform.$submitted && feedbackform.issueStatus.$valid}" id="Category">
+                                <label class="control-label">Category</label>
+                                <ui-select ui-select-focus-input name="Category" tagging tagging-label="('new')" data-ng-model="topMenuData.selectedCategory" theme="bootstrap" require-select style="width: 100% !important;">
+                                    <ui-select-match placeholder="Select Category" style="width: 100% !important;">
+                                        {{$select.selected.Name}}
+                                    </ui-select-match> <ui-select-choices repeat="item in topMenuData.CategoryData | filter: $select.search">
+                                        <div ng-bind-html="item.Name | highlight: $select.search"></div>
+                                    </ui-select-choices>
+                                </ui-select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-12 col-xs-12  visible-xs visible-sm " data-ng-class="{'has-error': feedbackform.$submitted && feedbackform.issueStatus.$invalid,'has-feedback': feedbackform.$submitted && feedbackform.issueStatus.$valid}" id="CategoryMobile">
+                                <label class="control-label">Category</label>
+                                <ui-select ui-select-focus-input tagging tagging-label="('new')" data-ng-model="topMenuData.selectedCategory" theme="bootstrap" require-select style="width: 100% !important;">
+                                    <ui-select-match placeholder="Select Category">
+                                        {{$select.selected.Name}}
+                                    </ui-select-match> <ui-select-choices repeat="item in topMenuData.CategoryData | filter: $select.search">
+                                        <div ng-bind-html="item.Name | highlight: $select.search"></div>
+                                    </ui-select-choices>
+                                </ui-select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group required col-lg-12 col-md-12 col-sm-12 col-xs-12" data-ng-class="{'has-error': feedbackform.$submitted && feedbackform.Subject.$invalid,'has-feedback': feedbackform.$submitted && feedbackform.Subject.$valid}">
+                                <label class="control-label">Subject</label>
+                                <div class="has-feedback">
+                                    <input class="form-control" type="text" name="Subject" required data-ng-model="topMenuData.feedback.Subject" maxlength="250" placeholder="Enter Subject">
+                                    <span class="glyphicon glyphicon-remove form-control-feedback" data-ng-show="feedbackform.$submitted && feedbackform.Subject.$error.required"></span>
+                                    <span class="help-block has-error error-msg" data-ng-show="feedbackform.$submitted && feedbackform.Subject.$error.required">Please Enter Subject</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="description" class="row">
+                            <div class="form-group required col-lg-12 col-md-12 col-sm-12 col-xs-12" style="max-height: 1000px; overflow-wrap:break-word; overflow-y:auto; overflow-x: hidden;" data-ng-class="{'has-error': feedbackform.$submitted && feedbackform.Description.$invalid,'has-feedback': feedbackform.$submitted && feedbackform.Description.$valid}">
+                                <label class="control-label">Description</label>
+                                <div class="has-feedback">
+                                    <div>
+                                        <summernote name="Description" required ng-model="topMenuData.feedback.Description" config="optionsFullView"></summernote>
+                                    </div>
+                                    <span class="glyphicon glyphicon-remove form-control-feedback" data-ng-show="feedbackform.$submitted && feedbackform.Description.$error.required"></span>
+                                    <span class="help-block has-error error-msg" data-ng-show="feedbackform.$submitted && feedbackform.Description.$error.required">Please Enter Description</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" data-ng-click="cancelFeedback()">Cancel</button>
+
+                            <button ng-disabled="topMenuData.isDisable" type="submit" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" ng-show="topMenuData.isSave"></span>
+                                <i class="fa fa-save fa-inverse"></i> Send
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>-->
+
+
+</div>
+<!--
+<style>
+    #description .note-editor.note-frame {
+        margin-bottom: 0;
+    }
+    
+    #modal1 {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+    #Category .form-control 
+    {
+         width: 100% !important;
+/*     width: 571px !important;*/
+    }
+   
+    #CategoryMobile input.form-control.ui-select-search {
+        width: 100% !important;
+    }
+
+    #topmenubtn .btn-default {
+        color: #333;
+        background-color: #E6E6E6 !important;
+        border-color: #ccc;
+    }
+</style>-->

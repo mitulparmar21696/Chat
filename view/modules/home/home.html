@@ -1,0 +1,91 @@
+<div  data-ng-init="init()">
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pt-10">
+        <div class="well">
+            <h3><b>How to use?</b></h3>
+            <hr/>
+
+            <p class="font17" >
+                You have to simply click on the icon it will pop up one chat window you can enter string and send it will print same message.
+            </p>
+           
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pt-10">
+        <div class="well">
+            <h3><b>What is AngularJs?</b></h3>
+            <hr/>
+
+            <p class="font17" >
+                HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pt-10">
+        <div class="well">
+            <h3><b>Alternative</b></h3>
+            <hr/>
+            <p class="font17" >
+               Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS, and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of these address the root problem that HTML was not designed for dynamic views.
+            </p>
+        </div>
+    </div>
+    
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pt-10">
+        <div class="well">
+            <h3><b>Extensibility</b></h3>
+            <hr/>
+            <p class="font17" >
+              AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Read on to find out how.
+            </p>
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pt-10">
+        <div class="well">
+            <h1></h1>
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 fixedbox collapse"  id="collapseExample" >
+        <div  class="panel panel-success col-sm-offset-3 col-lg-offset-8 col-xs-offset-3">
+            <div class="panel-heading">
+                Chat with me
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  style="height: 200px; overflow-x: auto;" >
+                        <ul class="chat" data-ng-repeat="msg in chatData.msgList" >
+                            <li class="pull-right col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 3px;">
+                                    <span class="success pull-right "><span class="chatBackGround" data-ng-bind="msg.msg"></span>&nbsp; <img  src="../../../image/Favicon.png"  class="ml2 thumbnail_small pull-right" />&nbsp;</span>
+                            </li>
+                            <li class="pull-left col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 3px;">
+                                    <span class="">
+                                        <img  src="../../../image/Favicon.png"  class="thumbnail_small mr2 pull-left" alt="img"/></span><span class="chatBackGround" data-ng-bind="msg.msg" ></span>
+
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                        <hr/>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                        <form id="user-form" name="roleform" novalidate="novalidate" valid-submit="chat()">
+                            <div class="col-sm-10 col-lg-10 col-md-10 col-xs-10">
+                                <textarea type="text" rows="3" placeholder="Enter Message" data-ng-model="chatData.myMsg.msg" class="form-control noResize"></textarea>
+                            </div>
+                            <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
+                                <button class="btn btn-success" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+        <i class="fa fa-comments fa-4x fixedbutton"  data-toggle="collapse" data-target="#collapseExample" style="color:  #00A300;" aria-expanded="true" aria-controls="collapseExample" aria-hidden="true"></i>
+    </div>
+</div>
+
+

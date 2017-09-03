@@ -1,0 +1,221 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Chat</title>
+        <link rel='shortcut icon' href='/image/Favicon.png' />
+        <base href="/" />
+        <noscript>
+        <meta http-equiv="Refresh" content="0; URL=js-error.html" />
+        </noscript>
+
+        <!--DEV ENVIRONMENT START-->
+        <link href="assets/js/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="assets/js/angular/css/fixes.css" rel="stylesheet" type="text/css" />
+        <link href="assets/js/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="assets/js/toastr/angular-toastr.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" rel="stylesheet" />
+        <link href="assets/css/layout.css" rel="stylesheet" />
+        <link href="assets/css/theme.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700" />
+        <!--DEV ENVIRONMENT END-->
+
+        <!--PROD ENVIRONMENT START 
+        
+         PROD ENVIRONMENT END-->
+
+
+    </head>
+    <body ng-app="voiceLogin" class="loginbody ">
+        <div data-ng-controller="HomeController" data-ng-init="init()">
+            <div ng-include src="userLoginData.template"></div>
+        </div>
+        <script type="text/ng-template" id="login.html"> 
+            <form id="loginform" class="loginform container-fluid" name="loginform" novalidate="novalidate" valid-submit="loginClick()">
+            <div class="row">
+            <div class="col-lg-offset-4 col-md-offset-3  col-lg-4 col-md-6 ">
+            <img src="image/logo.png" class="loginlogo" />
+            </div>
+            </div>
+            <div class="row">
+            <div class="form-group col-lg-offset-4 col-md-offset-3  col-lg-4 col-md-6 ">
+            <div class="well-reg">
+            <div class="panel-heading-reg">
+            <h4 class="fnt-color">Sign In</h4>
+            </div>
+            <div class="panel-body">
+            <div class="row">
+            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs"></div>
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" data-ng-class="{
+            'has-error': loginform.$submitted && loginform.email.$invalid,
+            'has - feedback': loginform.$submitted && loginform.email.$valid}">
+            <div class="has-feedback">
+            <input ng-disabled="userLoginData.isSave" class="form-control" type="email" name="email" data-ng-model="userLoginData.item.UserName" placeholder="Email Address" required="" />
+            <span class="glyphicon glyphicon-remove form-control-feedback" data-ng-show="loginform.$submitted && loginform.email.$error.required"></span>
+            <span class="help-block fnt-color error-msg" data-ng-show="loginform.$submitted && loginform.email.$error.required">Email is missing.</span>
+            <span class="help-block fnt-color error-msg" data-ng-show="loginform.$submitted && loginform.email.$error.email">Invalid email.</span>
+
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs"></div>
+            </div>
+            <div class="row">
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 " data-ng-class="{
+            'has-error': loginform.$submitted && loginform.Password.$invalid,
+            'has - feedback': loginform.$submitted && loginform.Password.$valid}">
+            <div class="has-feedback">
+            <input ng-disabled="userLoginData.isSave" class="form-control" type="password" name="Password" data-ng-model="userLoginData.item.Password" placeholder="Password" required="" />
+            <span class="glyphicon glyphicon-remove form-control-feedback" data-ng-show="loginform.$submitted && loginform.Password.$error.required"></span>
+            <span class="help-block fnt-color  error-msg" data-ng-show="loginform.$submitted && loginform.Password.$error.required">Password is missing.</span>
+            </div>
+            </div>
+            </div>
+
+
+            </div>
+            <div class="panel-footer-reg">
+            <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <a href="registration/forgot-password.html" target="_self" class="fnt-color">
+            Forgot password?
+            </a>
+            </div>
+            <div class="form-group col-lg-6 col-md-6  col-sm-6 col-xs-6">
+            <button type="submit" class="btn btn-primary pull-right" ng-disabled="userLoginData.isSave" >
+            <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" ng-show="userLoginData.isSave"></span>    
+            Sign In
+            </button>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="form-group col-lg-offset-4 col-md-offset-3  col-lg-4 col-md-6 ">
+            <p class="blocktext slogan">Agile Team Collaboration Platform</p>
+            </div>
+            </div>
+            <div class="row">
+            <div class="form-group col-lg-offset-4 col-md-offset-3  col-lg-4 col-md-6 ">
+            <button type="button" class="btn btn-primary input-block-level form-control" data-ng-click="registrationClick()">
+            Get your FREE account Today
+            </button>
+            </div>
+            </div>
+            </form>
+        </script>
+
+        <!-- template2.html -->
+        <script type="text/ng-template" id="renew.html">
+            <div class="form-group col-md-4 col-md-offset-4" style="margin-top:12em !important;">
+            <div class="well-reg">
+            <div class="panel-heading-reg">
+            <h3 class="fnt-color" data-ng-if="userLoginData.isRenew">Renew Subscription</h3>
+            <h3 class="fnt-color" data-ng-if="userLoginData.isPurchase">Purchase Subscription</h3>
+            <h3 class="fnt-color" data-ng-if="userLoginData.isExpried">Subscription Expried</h3>
+            <h3 class="fnt-color" data-ng-if="userLoginData.isNotActivated">Activation Required</h3>
+
+            </div>
+
+            <div class="panel-body">
+
+            <div class="row" data-ng-if="userLoginData.isRenew">
+            <div class="form-group  col-md-12">
+            <h5 class="fnt-color">Your Subscription has been Expired.</h5>
+            <h5 class="fnt-color">Kindly renew from  VOICE billing account.</h5>
+            </div>
+            </div>
+            <div class="row" data-ng-if="userLoginData.isPurchase">
+            <div class="form-group  col-md-12">
+            <h5 class="fnt-color">Your Subscription has been Expired.</h5>
+            <h5 class="fnt-color">Kindly renew from  VOICE billing account.</h5>
+            </div>
+            </div>
+            <div class="row" data-ng-if="userLoginData.isExpried">
+            <div class="form-group  col-md-12">
+            <h5 class="fnt-color">Your Subscription has been Expired.</h5>
+            <h5 class="fnt-color">Contact your Administrator</h5>
+            </div>
+            </div>
+            <div class="row" data-ng-if="userLoginData.isNotActivated">
+            <div class="form-group  col-md-12">
+            <h5 class="fnt-color">Your Subscription has not been Activated.</h5>
+            <h5 class="fnt-color">Please activate your account</h5>
+            </div>
+            </div>
+
+            </div>
+            <div class="panel-footer-reg">
+            <div class="row">
+            <div class="col-md-12">
+
+            <a href="http://accounts.krosswall.com/" target="_blank" type="button" class="btn btn-primary  pull-right" data-ng-if="userLoginData.isRenew">
+            Renew
+            </a>
+            <a href="http://accounts.krosswall.com/" target="_blank" type="button" class="btn btn-primary  pull-right" data-ng-if="userLoginData.isPurchase">
+            Purchase
+            </a>
+            <a href="registration/activation.html" type="button" class="btn btn-primary  pull-right" data-ng-if="userLoginData.isNotActivated">
+            Activate
+            </a>
+            <div data-ng-if="userLoginData.isExpried">&nbsp;</div>
+            </div>
+            </div>
+            </div>
+
+            </div>
+            </div>
+        </script>
+
+
+        <!--Version Modal -->
+        <div id="versionModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div>
+                            <button type="button" class="close"  data-dismiss="modal">&times;</button>
+                            <h3 class="control-label">Version</h3>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <b> The optimization technique used in VOICE helps user to work like flash. So whenever new version is available user that to refresh all content
+                                    Please use Ctrl + F5 to reload changes. </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-default"  data-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--DEV ENVIRONMENT START-->
+        <script src="assets/js/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/js/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/js/angular/angular.min.js" type="text/javascript"></script>
+        <script src="assets/js/angular-ui-router/angular-ui-router.min.js" type="text/javascript"></script>
+        <script src="assets/js/toastr/angular-toastr.tpls.min.js" type="text/javascript"></script>
+        <script src="assets/js/angular-moment/moment.min.js" type="text/javascript"></script>
+        <script src="assets/js/angular-moment/angular-moment.min.js" type="text/javascript"></script>
+        <script src="assets/js/requirejs/require.js" type="text/javascript"></script>
+        <script src="registration/common/module-login.js" type="text/javascript"></script>
+        <script src="view/config/directives/valid-submit.js" type="text/javascript"></script>
+        <script src="view/config/services/data-service.js"></script>
+        <!--DEV ENVIRONMENT END-->
+
+       
+    </body>
+</html>

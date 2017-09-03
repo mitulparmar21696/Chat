@@ -1,0 +1,358 @@
+/* Rajul-style-start-fordevice */
+.fa-muted {
+    color: #777 !important;
+}
+
+.fa {
+    color: #E9573E ;
+    margin-top: 2px !important;
+}
+
+.fa-black {
+    color: #454545 !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.fa-inverse {
+    color: #FFF !important;
+    margin-top: 2px !important;
+}
+
+.fa-base {
+    color: #E9573E !important;
+    margin-top: 2px !important;
+}
+
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
+    background-color: #E9573E;
+    border-color: #dd4b39;
+    opacity: 0.5;
+}
+
+.btn-primary {
+    background-color: #E9573E;
+    border-color: #dd4b39;
+}
+
+    .btn-primary:hover, .btn-primary:active {
+        opacity: 0.7;
+        background-color: #E9573E;
+        border-color: #dd4b39;
+    }
+
+.list-group-item {
+    border: none !important;
+    border-bottom: 1px solid #F4F6F9 !important;
+    margin-bottom: 0px !important;
+}
+
+    .list-group-item:hover {
+        background-color: #F8F7D9 !important;
+    }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .init-img {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    /* Styles */
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    /* Styles */
+    .init-img {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    .walltile {
+        min-width: 200px;
+    }
+
+    .walltileheader {
+        min-width: 170px;
+    }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    body {
+        font-size: 12px !important;
+    }
+
+    .walltile {
+        min-width: 350px;
+    }
+
+    .walltileheader {
+        min-width: 170px;
+    }
+
+    .nav > li > a {
+        padding: 15px 12px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    body {
+        font-size: 13px !important;
+    }
+
+    .walltile {
+        min-width: 350px;
+    }
+
+    .walltileheader {
+        min-width: 170px;
+    }
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    .walltile {
+        min-width: 120px;
+        max-width: 120px;
+        word-wrap: break-word;
+    }
+
+    .walltileheader {
+        min-width: 120px;
+        max-width: 120px;
+        word-wrap: break-word;
+    }
+
+    .init-img {
+        width: 250px;
+        height: auto;
+    }
+
+    /*X-Editable Mobile classe*/
+    /*TOP LEFT*/
+    .kw-popover-tl-mob form { left: -90px; }
+    .kw-popover-tl-mob form:before { left: 80%; }
+    .kw-popover-tl-mob form:after { left: 80%; }
+
+    /*TOP RIGHT*/
+    .kw-popover-tr-mob form { left: 65%; margin-left: -19px; }
+    .kw-popover-tr-mob form:before { left: 4px; }
+    .kw-popover-tr-mob form:after { left: 4px; }
+
+    /*BOTTOM LEFT*/
+    .kw-popover-bl-mob form { top: 24px !important; left: -90px; }
+    .kw-popover-bl-mob form:before { transform: rotate(180deg); top: -11px; left: 80%; }
+    .kw-popover-bl-mob form:after { transform: rotate(180deg); top: -10px; left: 80%; }
+
+    /*BOTTOM RIGHT*/
+    .kw-popover-br-mob form { top: 24px !important; left: 65%; margin-left: -19px; }
+    .kw-popover-br-mob form:before { left: 4px; transform: rotate(180deg); top: -11px; }
+    .kw-popover-br-mob form:after { left: 4px; transform: rotate(180deg); top: -10px; }
+
+    /*following classe are required to remove formatting applied in normal view*/
+    .kw-popover-br{ } 
+    .kw-popover-bl{ } 
+    .kw-popover-tr{ } 
+    .kw-popover-tl{ }
+
+    /*Special Class for Title*/
+    .kw-x-tl-mob-tit form { top: -79px !important; left: 15px; }
+    .kw-title-width { width: 150px;}
+    /*End - X-Editable Mobile classes*/
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    .walltile {
+        min-width: 120px;
+        max-width: 120px;
+        word-wrap: break-word;
+    }
+
+    .walltileheader {
+        min-width: 120px;
+        max-width: 120px;
+        word-wrap: break-word;
+    }
+
+    .init-img {
+        width: 250px;
+        height: 150px;
+    }
+
+    /*X-Editable Mobile classes*/
+    /*TOP LEFT*/
+    .kw-popover-tl-mob form { left: -90px; }
+    .kw-popover-tl-mob form:before { left: 80%; }
+    .kw-popover-tl-mob form:after { left: 80%; }
+
+    /*TOP RIGHT*/
+    .kw-popover-tr-mob form { left: 65%; margin-left: -19px; }
+    .kw-popover-tr-mob form:before { left: 4px; }
+    .kw-popover-tr-mob form:after { left: 4px; }
+
+    /*BOTTOM LEFT*/
+    .kw-popover-bl-mob form { top: 24px !important; left: -90px; }
+    .kw-popover-bl-mob form:before { transform: rotate(180deg); top: -11px; left: 80%; }
+    .kw-popover-bl-mob form:after { transform: rotate(180deg); top: -10px; left: 80%; }
+
+    /*BOTTOM RIGHT*/
+    .kw-popover-br-mob form { top: 24px !important; left: 65%; margin-left: -19px; }
+    .kw-popover-br-mob form:before { left: 4px; transform: rotate(180deg); top: -11px; }
+    .kw-popover-br-mob form:after { left: 4px; transform: rotate(180deg); top: -10px; }
+
+    /*following classe are required to remove formatting applied in normal view*/
+    .kw-popover-br{ } 
+    .kw-popover-bl{ } 
+    .kw-popover-tr{ } 
+    .kw-popover-tl{ }
+
+    /*Special Class for Title*/
+    .kw-popover-title form { top: -79px !important; left: 15px; }
+    .kw-title-width { width: 150px;}
+    /*End - X-Editable Mobile classes*/
+
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+ .init-img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+ .init-img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+     .init-img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+/* Rajul-style-forEnd */
+/*Loding Icon css*/
+.loading {
+    /*    border: 1px solid #ddd;*/
+    padding: 7px;
+    width: 133px;
+}
+
+/*loading effect Start*/
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+    -moz-animation: spin2 .7s infinite linear;
+}
+
+@-moz-keyframes spin2 {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin2 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+/*loading effect End*/
+.editable-empty, .editable-empty:hover, .editable-empty:focus, a.editable-empty, a.editable-empty:hover, a.editable-empty:focus {
+    font-style: normal !important;
+
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<meta http-equiv="Pragma" content="no-cache" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Chat</title>
+        <link rel='shortcut icon' href='/image/Favicon.png' />
+        <base href="/" />
+        <noscript>
+            <meta http-equiv="Refresh" content="0; URL=js-error.html" />
+        </noscript>
+
+        <!--DO NOT CHNAGE FROM 1 - ON PRODUCTION IT WILL BE CONFIGURED AUTOMATICALLY-->
+        <script>
+            var CURRENT_APP_VERSION = 1;
+            var CURRENT_STAGE = 0;
+            var CACHE_STAGE = false;
+            var APP_EDITION = "APP";
+        </script>
+
+        <!--CSS FOR PLUGINS START-->
+        <!--DO NOT ADD ANY COMMENTS BETWEEN LINK -->
+        <!--DEV ENVIRONMENT START-->
+        <link href="assets/js/offline/offline-theme-dark.css" rel="stylesheet" />
+        <link href="assets/js/offline/offline-language-english.css" rel="stylesheet" />
+        <link href="assets/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/js/angular/css/fixes.css" rel="stylesheet" />
+        <link href="assets/js/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="assets/js/toastr/angular-toastr.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/js/select/css/select.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700" />
+        <link href="assets/js/ngDialog/ngDialog.min.css" rel="stylesheet" />
+        <link href="assets/js/ngDialog/ngDialog-theme-default.min.css" rel="stylesheet" />
+        <link href="assets/js/ngDialog/ngDialog-custom-width.css" rel="stylesheet" />
+        <link href="assets/css/theme.css" rel="stylesheet" />
+        <link href="assets/css/layout.css" rel="stylesheet" />
+        <link href="assets/css/menu.css" rel="stylesheet" />
+        <link href="assets/css/custom.css" rel="stylesheet" />
+
+        <!--DEV ENVIRONMENT END-->
+        <!--PROD ENVIRONMENT START
+    
+       
+             PROD ENVIRONMENT END-->
+        <style type="text/css">
+            div.m-app-loading {
+                position: fixed;
+            }
+
+                div.m-app-loading div.animated-container {
+                    background-color: white;
+                    bottom: 0px;
+                    left: 0px;
+                    opacity: 1.0;
+                    position: fixed;
+                    right: 0px;
+                    top: 0px;
+                    z-index: 999999;
+                }
+                    /* Used to initialize the ng-leave animation state. */
+                    div.m-app-loading div.animated-container.ng-leave {
+                        opacity: 1.0;
+                        transition: all linear 200ms;
+                        -webkit-transition: all linear 200ms;
+                    }
+                    /* Used to set the end properties of the ng-leave animation state. */
+                    div.m-app-loading div.animated-container.ng-leave-active {
+                        opacity: 0;
+                    }
+
+                div.m-app-loading div.messaging {
+                    color: #333333;
+                    font-family: monospace;
+                    left: 0px;
+                    margin-top: -37px;
+                    position: absolute;
+                    right: 0px;
+                    text-align: center;
+                    top: 50%;
+                }
+
+                div.m-app-loading h1 {
+                    font-size: 26px;
+                    line-height: 35px;
+                    margin: 0px 0px 20px 0px;
+                }
+
+                div.m-app-loading p {
+                    font-size: 18px;
+                    line-height: 14px;
+                    margin: 0px 0px 0px 0px;
+                }
+        </style>
+
+    </head>
+    <!--DEV ENVIRONMENT START-->
+    <body>
+        <div id="myarea">
+            <div class="m-app-loading">
+                <div class="animated-container">
+                    <div class="messaging">
+                        <img src='/image/loadinglogo.png' alt="Loading..." style="margin-top: -150px; margin-bottom: 10px;" />
+                        <h1>
+                            Chat
+                        </h1>
+                        <h3>Have an chatful day !!! </h3>
+                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <!-- BEGIN HEADER -->
+        <div ui-view="topmenu"></div>
+        <!-- END HEADER -->
+        <!-- BEGIN PAGE CONTAINER -->
+        <div ui-view="layout"></div>
+
+        <!--JS FOR PLUGINS START-->
+        <script src="view/config/include/rconfig.js"></script>
+        <!--<script src="assets/js/introjs/intro.min.js"></script>-->   
+        <script type="text/javascript" src="assets/js/requirejs/require.js" data-main="view/config/include/main.js"></script>
+    </body>
+   
+</html>
+
+
+
+
